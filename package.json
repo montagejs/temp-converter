@@ -2,6 +2,6 @@
     "name": "temp-converter",
     "version": "1.0.0",
     "dependencies": {
-        "montage" : "0.12.3"
+        "montage" : "0.12.4"
     }
 }
