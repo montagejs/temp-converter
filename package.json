@@ -1,7 +1,9 @@
 {
     "name": "temp-converter",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "dependencies": {
-        "montage" : "0.12.4"
+        "montage" : "0.13.0-alpha",
+        "matte": "0.1.1-alpha",
+        "native": "0.1.1-alpha"
     }
 }
