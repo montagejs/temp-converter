@@ -1,43 +1,26 @@
 .Main {
-   padding: 10px;
-   text-shadow: #fff 0 1px 0;
-   border-radius: 8px;
-   background-color: hsl(0,0%,95%);
-   box-shadow: 	inset 0px 1px 2px 1px hsla(0,0%,100%,1), 0px 2px 5px hsla(0,0%,0%,.1);
-}
-
-body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    -webkit-box-align: center;
-    -webkit-box-pack: center;
-    display: -moz-box;
-    -moz-box-align: center;
-    -moz-box-pack: center;
+    margin: auto;
+    padding: 10px;
+    text-shadow: #fff 0 1px 0;
+    border-radius: 8px;
+    background-color: hsl(0,0%,95%);
+    box-shadow: 	inset 0px 1px 2px 1px hsla(0,0%,100%,1), 0px 2px 5px hsla(0,0%,0%,.1);
 }
 
 /* Converter ----------------------------- */
 
 .Main .title {
-   margin: 0 0 5px 0;
-   text-align: center;
-   font: 24px/40px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+    margin: 0 0 5px 0;
+    text-align: center;
+    font: 24px/40px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
 }
 .Main .controls {
-    display: -webkit-box;
-    -webkit-box-align: center;
-    -webkit-box-pack: center;
-    display: -moz-box;
-    -moz-box-align: center;
-    -moz-box-pack: center; 
     padding: 20px;
     text-shadow: #fff 0 1px 0;
     border-radius: 6px;
     background-color: hsl(0,0%,98%);
     box-shadow: 	inset 0px 1px 2px 1px hsla(0,0%,100%,1), 0px 2px 5px hsla(0,0%,0%,.1);    
-    }
+}
 
 /* Number ----------------------------- */
 
@@ -80,40 +63,31 @@ body {
 /* Thermometer ----------------------------- */
 
 .Main .thermometerTrack {
-    width: 24px;
-    text-align: center;
-    margin-left: 20px;
-    padding: 8px 5px;
-    border-radius: 12px;
+    margin-top: 20px;
+    padding: 8px 4px 10px 4px;
+    border-radius: 100px;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     box-shadow: inset 0px 1px 2px hsla(0,0%,0%,.5), 0 2px 0 hsla(0,0%,100%,1);
-    background: -webkit-linear-gradient(bottom,  hsl(200,100%,50%),
+    background: -webkit-linear-gradient(left,  hsl(200,100%,50%),
                                                  hsl(200,100%,80%) 30%,
                                                  hsl(60,100%,65%) 50%,
                                                  hsl(0,100%,80%) 70%,
                                                  hsl(0,100%,50%) );
-    background: -moz-linear-gradient(bottom,     hsl(200,100%,50%),
+    background: -moz-linear-gradient(left,     hsl(200,100%,50%),
                                                  hsl(200,100%,80%) 30%,
                                                  hsl(60,100%,65%) 50%,
                                                  hsl(0,100%,80%) 70%,
                                                  hsl(0,100%,50%) );
 }
 
-.Main .thermometerTrack input[type="range"] {
-    -webkit-appearance: slider-vertical;
-    /*-moz-appearance: scale-vertical; Looked promising, but doesn't work*/
+.Main .thermometerTrack .montage-Slider--horizontal {
+    width: 100%;
+}
+
+.Main .thermometerTrack .digit-Slider {
+    background-color: transparent;
+    box-shadow: none;
     border: none;
-    width: 16px;
-    height: 100px;
-    margin: 0;
-    background: transparent;
-    box-sizing: border-box;
-    vertical-align: middle;
-}
-
-.Main .thermometerTrack input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border-radius: 15px;
-    box-shadow: inset 0 -1px 4px hsla(0,0%,0%,.2), inset 0 0 0 10px hsla(0,0%,100%,1), 0px 1px 2px 2px hsla(0,0%,0%,.2);
 }
 

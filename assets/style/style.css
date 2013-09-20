@@ -1,6 +1,16 @@
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    height: 100%;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    display: -webkit-flex;
+    display: flex;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
     color: #222;
+    background-color: hsl(0, 0%, 90%);
 }
