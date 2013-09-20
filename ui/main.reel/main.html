@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Main</title>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <script type="text/montage-serialization">
+        {
+            "owner": {
+                "properties": {
+                    "element": {"#": "main"}
+                }
+            },
+        "celsiusTextfield": {
+            "prototype": "digit/ui/number-field.reel",
+            "properties": {
+                "element": {"#": "celsius"}
+                },
+                        "bindings": {
+                "value": {"<->": "(+@fahrenheitTextfield.value - 32) / 1.8"}
+            }                
+        },
+        "fahrenheitTextfield": {
+            "prototype": "digit/ui/number-field.reel",
+            "properties": {
+                "element": {"#": "fahrenheit"},
+                "value": "32"
+                }
+        },
+        "thermometer": {
+            "prototype": "digit/ui/slider.reel",
+            "properties": {
+                "element": {"#": "thermometer"}
+                },
+                        "bindings": {
+                "value": {"<->": "@fahrenheitTextfield.value"}
+            }
+        }            
+           
+        }
+    </script>
+</head>
+<body>
+    <div data-montage-id="main" data-montage-skin="light" class="Main">
+    <div class="title">Temperature Converter</div>
+    <div class="controls">
+        <section>
+        <label>Celsius:
+           <input data-montage-id="celsius"/>
+        </label>
+        <label>Fahrenheit:
+           <input data-montage-id="fahrenheit"/>
+        </label>           
+ 		</section>
+ 		<section class="thermometerTrack">  
+           <input type="range" name="thermometer" min="-13" max="122" data-montage-id="thermometer"/>
+        </section>
+    </div>	    
+    </div>
+</body>
+</html>
