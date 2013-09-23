@@ -1,0 +1,47 @@
+.Controls {
+    margin: auto;
+    padding: 20px;
+    text-shadow: #fff 0 1px 0;
+    border-radius: 10px;
+    background-color: hsl(0,0%,98%);
+    box-shadow: 	inset 0px 1px 2px 1px hsla(0,0%,100%,1), 0px 2px 5px hsla(0,0%,0%,.1);    
+}
+
+/* Number ----------------------------- */
+
+.Controls-label {
+    display: block;
+    margin-bottom: 20px;
+    color: hsl(0,0%,50%);
+} 
+    
+/* Thermometer ----------------------------- */
+
+.Controls-thermometer {
+    padding: 8px 4px 10px 4px;
+    border-radius: 100px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: inset 0px 1px 2px hsla(0,0%,0%,.5), 0 2px 0 hsla(0,0%,100%,1);
+    background: -webkit-linear-gradient(left,  hsl(200,100%,50%),
+                                                 hsl(200,100%,80%) 30%,
+                                                 hsl(60,100%,65%) 50%,
+                                                 hsl(0,100%,80%) 70%,
+                                                 hsl(0,100%,50%) );
+    background: -moz-linear-gradient(left,     hsl(200,100%,50%),
+                                                 hsl(200,100%,80%) 30%,
+                                                 hsl(60,100%,65%) 50%,
+                                                 hsl(0,100%,80%) 70%,
+                                                 hsl(0,100%,50%) );
+}
+
+.Controls-thermometer-slider.montage-Slider--horizontal {
+    width: 100%;
+}
+
+.Controls-thermometer-slider.digit-Slider {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
