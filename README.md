@@ -1,5 +1,7 @@
-Sample Montage application
+Temp Converter
 ===============
+
+> Note that this code has not been updated to reflect the most recent changes in MontageJS. Although you will be able to run the application, it may not look or behave as intended.
 
 This application is an example of how a Montage application can be structured and implemented.
 
