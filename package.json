@@ -1,5 +1,5 @@
 {
-    "name": "temp-convert",
+    "name": "new-app",
     "version": "0.1.0",
     "dependencies": {
         "montage": "~0.13.2",

@@ -13,25 +13,70 @@
                     "element": {"#": "main"}
                 }
             },
-            "header": {
-                "prototype": "ui/header.reel",
+            
+            "montageVersion": {
+                "prototype": "ui/version.reel",
                 "properties": {
-                    "element": {"#": "header"}
+                    "element": {"#": "montageVersion"}
                 }
             },
-            "controls": {
-                "prototype": "ui/controls.reel",
+            
+            "title": {
+                "prototype": "digit/ui/title.reel",
                 "properties": {
-                    "element": {"#": "controls"}
+                    "element": {"#": "title"},
+                    "value": "Temperature Converter"
+                }
+            },              
+            
+            "celsiusNumberfield": {
+                "prototype": "digit/ui/number-field.reel",
+                "properties": {
+                    "element": {"#": "celsius"}
+                },
+                "bindings": {
+                    "value": {"<->": "(+@fahrenheitNumberfield.value - 32) / 1.8"}
+                }
+            },
+            
+            "fahrenheitNumberfield": {
+                "prototype": "digit/ui/number-field.reel",
+                "properties": {
+                    "element": {"#": "fahrenheit"},
+                    "value": "32"
+                }
+            },
+            
+            "thermometer": {
+                "prototype": "digit/ui/slider.reel",
+                "properties": {
+                    "element": {"#": "thermometer"},
+                    "axis": "vertical"
+                },
+                "bindings": {
+                    "value": {"<->": "@fahrenheitNumberfield.value"}
                 }
             }
         }
     </script>
 </head>
 <body>
-    <div data-montage-id="main" class="Main" data-montage-skin="light">
-        <header data-montage-id="header"></header>
-        <div data-montage-id="controls"></div>
+    <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <h1 data-montage-id="title" class="Title"></h1>
+        <div class="Controls">
+            <fieldset class="Numbers">
+                <label class="Label">&deg;C
+                   <input data-montage-id="celsius">
+                </label>
+                <label class="Label">&deg;F
+                   <input data-montage-id="fahrenheit">
+                </label>
+            </fieldset>
+            <fieldset class="Slider">
+               <input data-montage-id="thermometer" class="SliderHandle" type="range" min="-13" max="122">
+            </fieldset>
+        </div>
+        <footer data-montage-id="montageVersion"></footer>
     </div>
 </body>
 </html>
