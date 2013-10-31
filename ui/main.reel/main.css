@@ -87,12 +87,12 @@
                                                  hsl(0,100%,50%) );
 }
 
-.SliderHandle.digit-Slider.montage-Slider--vertical {
+.Slider-handle.digit-Slider.montage-Slider--vertical {
     height: 120px;
 }
 
-.SliderHandle.digit-Slider {
+.Slider-handle.digit-Slider {
     background-color: transparent;
+    border-color: transparent;
     box-shadow: none;
-    border: none;
 }
