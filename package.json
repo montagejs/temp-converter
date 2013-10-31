@@ -2,8 +2,8 @@
     "name": "new-app",
     "version": "0.1.0",
     "dependencies": {
-        "montage": "~0.13.2",
-        "digit": "~0.3.1"
+        "montage": "git+http://github.com/montagejs/montage.git#2171007e7df7989febc4c71f5b4af2db57948549",
+        "digit": "git+http://github.com/montagejs/digit.git#14fb57cacc9e1b52ef202685fbe6a97946c3a774"
     },
     "devDependencies": {
         "montage-testing": "0.2.0"
