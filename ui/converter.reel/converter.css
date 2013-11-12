@@ -1,16 +1,17 @@
 .Converter {
-    margin: 20px 0;
+    margin: 20px auto;
     padding: 20px;
-    width: 100%;
-    max-width: 274px;
-    text-shadow: #fff 0 1px 0;
+    width: 274px;
     border-radius: 10px;
     background-color: hsl(0,0%,98%);
     box-shadow: inset 0px 1px 2px 1px hsla(0,0%,100%,1), 0px 2px 5px hsla(0,0%,0%,.1);
 }
 
-
-/* Numbers -------------------------- */
+.Converter:after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
 .Numbers {
     float: left;
@@ -19,15 +20,9 @@
     padding: 0;
 }
 
-
-/* Number ----------------------------- */
-
 .Label {
-    display: block;
     margin: 15px 0;
-    text-align: center;
     line-height: 40px;
-    color: hsl(0,0%,60%);
     font-size: 1.2em;
 }
 
@@ -35,9 +30,6 @@
     width: 70px;
     vertical-align: middle;
 }
-
-    
-/* Slider ------------------------ */
 
 .Slider {
     float: right;
