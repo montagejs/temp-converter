@@ -4,17 +4,17 @@
     },
 
     "celsiusTextfield": {
-        "prototype": "montage/ui/input-text.reel",
+        "prototype": "montage/ui/number-field.reel",
         "properties": {
             "element": {"#": "celsius"}
         },
         "bindings": {
-            "value": {"<->": "@fahrenheitTextfield.value", "converter": {"@": "converter"}}
+            "value": {"<->": "(+@fahrenheitTextfield.value - 32) / 1.8"}
         }
     },
 
     "fahrenheitTextfield": {
-        "prototype": "montage/ui/input-text.reel",
+        "prototype": "montage/ui/number-field.reel",
         "properties": {
             "element": {"#": "fahrenheit"},
             "value": "32"
@@ -22,9 +22,10 @@
     },
     
     "barometer": {
-        "prototype": "montage/ui/native/input-range.reel",
+        "prototype": "montage/ui/slider.reel",
         "properties": {
-            "element": {"#": "barometer"}
+            "element": {"#": "barometer"},
+            "axis": "vertical"
         },
         "bindings": {
             "value": {"<->": "@fahrenheitTextfield.value"}

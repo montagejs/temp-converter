@@ -31,7 +31,7 @@ POSSIBILITY OF SUCH DAMAGE.
 var Montage = require("montage").Montage,
 Converter = require("montage/core/converter/converter").Converter;
 
-exports.TempConverter = Montage.create(Converter, {
+exports.TempConverter = Converter.specialize({
 
     // convert fahrenheit to celsius (showing our non-metric heritage here)
     convert: {
