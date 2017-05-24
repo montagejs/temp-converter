@@ -1,7 +1,7 @@
 {
-    "name": "temp-converter",
-    "version": "1.0.0",
-    "dependencies": {
-        "montage" : "16.0.3"
-    }
+  "name": "temp-converter",
+  "version": "1.0.0",
+  "dependencies": {
+    "montage": "^16.0.4"
+  }
 }
