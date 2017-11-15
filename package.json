@@ -1,7 +1,21 @@
 {
-  "name": "temp-converter",
-  "version": "1.0.1",
-  "dependencies": {
-    "montage": "^17.0.7"
-  }
+    "name": "temp-converter",
+    "version": "1.0.0",
+    "dependencies": {
+        "montage": "git://github.com/montagejs/montage#master",
+        "digit": "^3.0.0"
+    },
+    "devDependencies": {
+    "minit": "^0.5.7",
+    "montage-testing": "~0.4.3",
+    "mop": "^16.0.1"
+  },
+  "scripts": {
+    "build": "mop .",
+    "start": "minit serve",
+    "start:dist": "minit serve -r dist"
+  },    
+  "bundle": [
+    "ui/main.reel"
+  ]
 }
