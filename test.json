@@ -17,7 +17,7 @@
     }
   },
   "root": {
-    "prototype": "montage-data/logic/service/data-selector",
+    "prototype": "montage/data/service/data-selector",
     "properties": {
       "type": {"@": "weatherreport"},
       "criteria": {"@": "criteria"},
