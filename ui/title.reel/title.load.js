@@ -1,0 +1,1 @@
+montageDefine("24e6f9c","ui/title.reel/title",{dependencies:["digit/ui/title.reel"],factory:function(e,i,t){var l=e("digit/ui/title.reel").Title;i.Title=l.specialize({constructor:{value:function(){this["super"](),this.classList.add("my-Title")}}})}});

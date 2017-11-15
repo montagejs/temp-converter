@@ -1,0 +1,1 @@
+var Title=require("digit/ui/title.reel").Title;exports.Title=Title.specialize({constructor:{value:function(){this["super"](),this.classList.add("my-Title")}}});

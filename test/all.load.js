@@ -1,0 +1,1 @@
+montageDefine("24e6f9c","test/all",{dependencies:["montage-testing"],factory:function(e,t,n){e("montage-testing").run(e,["test/sample"])}});

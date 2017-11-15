@@ -1,0 +1,1 @@
+montageDefine("24e6f9c","ui/main.reel/main",{dependencies:["montage/ui/component"],factory:function(e,n,t){var o=e("montage/ui/component").Component;n.Main=o.specialize({constructor:{value:function(){this["super"]()}},titleValue:{get:function(){return"Temperature Converter"}}})}});

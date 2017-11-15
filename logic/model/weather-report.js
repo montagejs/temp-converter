@@ -1,0 +1,1 @@
+var Montage=require("montage").Montage,DataObjectDescriptor=require("montage/data/model/data-object-descriptor").DataObjectDescriptor;exports.WeatherReport=WeatherReport=Montage.specialize({temp:{value:null},constructor:{value:function(){}}},{TYPE:{get:function(){return WeatherReport.objectPrototype=WeatherReport,WeatherReport}}});

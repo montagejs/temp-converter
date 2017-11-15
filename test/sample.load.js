@@ -1,0 +1,1 @@
+montageDefine("24e6f9c","test/sample",{dependencies:[],factory:function(e,n,c){describe("Given my code",function(){beforeEach(function(){}),afterEach(function(){}),describe("When ...",function(){beforeEach(function(){}),it("Then...",function(){expect(!0).toEqual(!0)})})})}});

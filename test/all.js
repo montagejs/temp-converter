@@ -1,0 +1,1 @@
+require("montage-testing").run(require,["test/sample"]);

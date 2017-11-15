@@ -1,0 +1,1 @@
+montageDefine("b7b5e36","data/model/property-descriptor",{dependencies:["core/core"],factory:function(e,o,r){var i=e("core/core").Montage;o.PropertyDescriptor=i.specialize({isRelationship:{value:!1},isOptional:{value:!1}})}});
