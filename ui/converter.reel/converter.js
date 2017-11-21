@@ -26,7 +26,7 @@ exports.Converter = Component.specialize(/** @lends Converter# */ {
 
             var dataExpression = "city = $city && unit = $unit && country = $country";
             var dataParameters = {
-                city: 'San-Francisco',
+                city: 'San Francisco',
                 country: 'us',
                 unit: 'imperial'
             };
