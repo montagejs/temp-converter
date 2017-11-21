@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "license": "BSD-3-Clause",
   "author": "Montage Studio, inc. (http://montagestudio.com/)",
+  "production": true,
   "dependencies": {
-    "montage": "git://github.com/montagejs/montage#master",
-    "digit": "^3.0.0"
+    "digit": "^3.0.0",
+    "http2-cache": "kaazing/http2-cache.js#bugs/mopSupportV2",
+    "montage": "git://github.com/montagejs/montage#master"
   },
   "repository": {
     "type": "git",

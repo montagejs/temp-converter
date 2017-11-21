@@ -3,6 +3,9 @@
  */
 var Component = require("montage/ui/component").Component;
 
+// This also can load http2-cache if un commented
+// var Http2CAche = require('http2-cache');
+
 /**
  * @class Main
  * @extends Component
