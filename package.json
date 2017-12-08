@@ -6,7 +6,7 @@
   "production": true,
   "dependencies": {
     "digit": "^3.0.0",
-    "http2-cache": "kaazing/http2-cache.js#bugs/mopSupportV2",
+    "http2-cache": "kaazing/http2-cache.js#features/browserBuild",
     "montage": "git://github.com/montagejs/montage#master"
   },
   "repository": {
